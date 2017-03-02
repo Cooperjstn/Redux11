@@ -7,13 +7,13 @@
  */
 
  function findLongestWord(str) {
-  var array1 = str.match(/\w[a-z]{0,}/gi);
-  var result = array1[0];
-  for(var x = 1 ; x < array1.length ; x++)
+  var array = str.match(/\w[a-z]{0,}/gi);
+  var result = array[0];
+  for(var x = 1 ; x < array.length ; x++)
     {
-    if(result.length < array1[x].length)
+    if(result.length < array[x].length)
     {
-    result = array1[x];
+    result = array[x];
     }
   }
   return result;
